@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    </head>
+    <body>
+        <div id="mydivv"></div>
+        <div id="d1"></div>
+        <div class="d2"></div>
+        <input type="text" name="field">
+        <script>
+            const ele=document.getElementById("d1")
+            ele.innerHTML="<h1>CAT</h1>"
+            document.body.appendChild(ele)
+            ele.style.color="green"
+            
+            const element=document.createElement("img")
+            element.src="cat-.webp"
+            document.body.appendChild(element)
+            
+
+             element.style.border="25px solid grey"
+            element.style.BackgroundSize="cover"
+            const box=document.getElementsByName("field")[0]
+            box.value="if you are bad  i am your dad "
+            document.body.appendChild(box)
+            box.style.color=" blue"
+            box.style.border="1px solid black"
+            box.style.backgroundColor="grey"
+        
+            const element1=document.createElement("input")
+            document.body.appendChild(element1)
+            const division=document.getElementById("mydivv")
+            division.textContent="If you have a FISH you are always welcome otherwise i wont allow you  ...by catiiiii"
+            document.body.appendChild(division)
+            division.style.border="3px solid black"
+            division.style.backgroundColor="pink"
+            const cls=document.getElementsByClassName("d2")
+            for(let i=0;i<cls.length;i++){
+            cls[i].textContent="MEOOOOWWWW!!!"
+            }
+            
+            
+
+            </script>
+            <div id="container">
+                <p >welcome all</p><button id="mybutton">click me </button>
+            </div>
+            <script>
+                document.getElementById("mybutton").addEventListener("click",function(){
+                    let container=document.getElementById("container")
+                    let existing=container.querySelector("p")
+                    container.removeChild(existing)
+                })
+                function checkPasswordStrength(password){       
+    if(password.length<6)
+    {
+       return "Weak";
+    }
+    else{
+       let hasletter=/[a-zA-Z]/.test(password);
+       let hasdigit=/[0-9]/.test(password);
+       if(hasletter&&hasdigit)
+       {
+          return "Strong";
+       }
+       else{
+          return "Medium";
+       }
+    }
+ 
+ }
+ 
+ console.log(checkPasswordStrength("abcedgfgfh34322AADFD"));
+ 
+            
+            </script>
+  </body>
+  </html>

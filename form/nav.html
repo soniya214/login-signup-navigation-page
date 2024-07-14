@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <style>
+    ul{
+        margin: 0;
+        padding: 0;
+    }
+    body{
+        margin:0;
+        padding: 0;
+    }
+   </style>
+
+</head>
+<body>
+    <script>
+
+const a2=["Home","About","Blog","Vlog","Contact"];
+const unorder=document.createElement("ul");
+unorder.style.display="flex";
+unorder.style.margin="10px";
+unorder.style.listStyleType="none";
+unorder.style.fontSize="35px";
+unorder.style.backgroundColor = "orange";
+
+for(let i=0;i<a2.length;i++){
+      const list=document.createElement("li");
+      list.style.margin="6px 0";
+      list.style.padding="6px";
+      list.style.color="black";
+      list.textContent=a2[i];
+      list.style.paddingRight="150px"
+      unorder.appendChild(list);
+
+}
+
+unorder.style.padding="20px"
+unorder.style.justifyContent="flex-end"
+document.body.appendChild(unorder);
+  </script>
+</body>
+</html>

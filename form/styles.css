@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image:url(degree.jpg);
+    background-size: cover;
+  }
+
+ .sign{
+    border: 2px solid rgb(9, 163, 137);
+    background:rgba(247, 203, 4, 0.11);
+    padding: 20px;
+    padding-right: 10rem;
+    width: 450px;
+    margin: 50px auto;
+    border-radius: 2rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+ }
+ .Username,.password,.confirm,.mail,.phone,.dob,.lang{
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 1rem;
+}
+.Username input{
+   
+    align-items: right;
+}
+button{
+    
+}
+ form {
+    display: flex;
+    flex-direction: column;
+    align-items: center
+}
+
+.form-group {
+    display: flex;
+
+}
+h1{
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight:bolder;
+    padding-top: 2rem;
+    text-align: center;
+}
+
+form label{
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bolder;
+    text-align: right;
+}
+
+input:focus{
+    background-color: rgb(243, 188, 218);
+}
+form button{
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    padding: 0.2rem 2rem;
+}
+.check,.gender{
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight:600;
+}
+ form input, form select, form button {
+    padding:0.5rem ;
+
+ }
+ .submit,.cancel{
+    background-color: rgb(238, 21, 50);
+    padding: 0.5rem 2rem 0.5rem 2rem;
+    font-weight: bolder;
+    font-style: oblique;
+    border-radius: 1rem;
+}
+.submit:hover,.cancel:hover{
+    background-color: rgba(18, 80, 116, 0.24);
+}
+ 
+form input[type="checkbox"] {
+    width: 0.5; /* Ensure consistent width for checkboxes */
+    margin-left: 5rem;
+}
+form button{
+    padding:10rem 2rem 5rem 2rem;
+    margin-left:5rem;
+}
+form .check label input {
+    margin-right: 0.5rem;
+}
+
+p{
+    text-align: center;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    padding-bottom: 5rem;
+}
+a{
+    color:rgb(82, 9, 150);
+}
